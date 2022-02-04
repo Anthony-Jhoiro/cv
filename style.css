@@ -99,7 +99,11 @@ ul.no-style-list {
     position: relative;
 }
 
-.timeline-card::before {
+.ctn {
+    overflow: hidden;
+}
+
+.timeline-card:not(:nth-child(1)):before {
     content: '';
     position: absolute;
     left: -25px;
@@ -109,11 +113,26 @@ ul.no-style-list {
     border-radius: 7px;
 }
 
+.timeline-card:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    /* width: 24px;
+    height: 24px;
+    background: #D1D6E6;
+    border-radius: 7px; */
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid #D1D6E6;
+}
+
 .timeline-card::after {
     content: '';
     position: absolute;
     left: -25px;
-    top: 0;
+    top: 1em;
     height: 100%;
     width: 2px;
     background: #D1D6E6;
