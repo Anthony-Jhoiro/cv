@@ -7,7 +7,7 @@
 
         mywindow.document.write(`<html><head><title>${title}</title>`);
         mywindow.document.write('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">');
-        mywindow.document.write('<link rel="stylesheet" type="text/css" href="http://localhost:5500/style.css" />')
+        mywindow.document.write('<link rel="stylesheet" type="text/css" href="/style.css" />')
         mywindow.document.write('</head><body >');
         mywindow.document.write(cv.innerHTML);
         mywindow.document.write('</body></html>')
