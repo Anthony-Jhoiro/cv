@@ -1,8 +1,9 @@
 html {
     margin: 0;
     padding: 0;
-    --primary-bg: #5CAECC;
-    --primary-text: #396D80;
+    --primary-bg: #4B8DA6;
+    --primary-text: #4B8DA6;
+    --secondary-text: #607780;
 }
 
 * {
@@ -13,6 +14,7 @@ body {
     padding: 5em;
     background: #222;
     font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
 }
 
 #cv-container {
@@ -52,6 +54,8 @@ body {
 
 #admin-section-me>img {
     margin: 1em 0;
+    width: 3.5cm;
+    aspect-ratio: 1;
 }
 
 .section-title {
@@ -126,6 +130,7 @@ ul.no-style-list {
 
 em {
     color: var(--primary-text);
+    font-weight: bold;
 }
 
 li {
@@ -137,7 +142,9 @@ li {
         -webkit-print-color-adjust: exact;
     }
     body {
-        padding: 0
+        padding: 0;
+        overflow: hidden;
+        display: block;
     }
 }
 
@@ -150,15 +157,40 @@ li {
     padding-left: 2em;
 }
 
-img {
-    width: 4cm;
-    aspect-ratio: 1;
-}
-
 #main-title {
     margin: .5em 0;
 }
 
 #name {
     margin: .5em 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5em 0;
+}
+
+.skills-grid>span {
+    text-align: center;
+}
+
+.horizontal-separator {
+    width: 100%;
+    height: .8em;
+}
+
+.date {
+    color: var(--secondary-text);
+}
+
+.date::after {
+    color: #000;
+    content: " - ";
+}
+
+.skill-title {
+    color: var(--secondary-text);
+    margin: 0;
+    font-size: 11pt;
 }
