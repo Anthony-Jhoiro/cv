@@ -1,0 +1,164 @@
+html {
+    margin: 0;
+    padding: 0;
+    --primary-bg: #5CAECC;
+    --primary-text: #396D80;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5em;
+    background: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+#cv-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cv {
+    width: 21cm;
+    height: 29.7cm;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 1em
+}
+
+.monospace {
+    font-family: 'Fira Code', monospace;
+}
+
+#admin-section {
+    background-color: #BFEEFF;
+    display: flex;
+    padding: 0 1em;
+}
+
+#admin-section-contact-informations {
+    flex-grow: 2;
+}
+
+#admin-section-me {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+#admin-section-me>img {
+    margin: 1em 0;
+}
+
+.section-title {
+    background-color: var(--primary-bg);
+    color: #fff;
+    padding: .2em 1em;
+    margin: .5em 0
+}
+
+.tag-like::after {
+    content: '/>';
+}
+
+.tag-like::before {
+    content: '<';
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: var(--primary-text);
+    text-decoration: underline;
+}
+
+.no-style-list li {
+    list-style-type: none;
+    margin: 0;
+}
+
+.no-style-list li:not(:last-child) {
+    padding-bottom: .5em;
+}
+
+ul.no-style-list {
+    padding: 0;
+}
+
+.timeline-card {
+    margin-left: 40px;
+    position: relative;
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: 14px;
+    height: 14px;
+    background: #D1D6E6;
+    border-radius: 7px;
+}
+
+.timeline-card::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #D1D6E6;
+    margin-left: 5.3px;
+}
+
+.card * {
+    margin: 0;
+}
+
+.card {
+    padding-top: .5em;
+}
+
+em {
+    color: var(--primary-text);
+}
+
+li {
+    list-style-type: '- ';
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+    body {
+        padding: 0
+    }
+}
+
+@page {
+    size: auto;
+    margin: 0mm;
+}
+
+.card ul {
+    padding-left: 2em;
+}
+
+img {
+    width: 4cm;
+    aspect-ratio: 1;
+}
+
+#main-title {
+    margin: .5em 0;
+}
+
+#name {
+    margin: .5em 0;
+}
