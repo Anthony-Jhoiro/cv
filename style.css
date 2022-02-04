@@ -194,3 +194,32 @@ li {
     margin: 0;
     font-size: 11pt;
 }
+
+#action-row {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 50;
+}
+
+#action-row .btn {
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0 1em;
+    font-size: 14pt;
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+
+#action-row .btn:hover {
+    background-color: #444;
+}
