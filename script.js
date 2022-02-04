@@ -1,7 +1,14 @@
 (() => {
 
     const resumeContainer = document.getElementById("cv-container");
-    const printButton = document.getElementById("print-btn")
+    const printButton = document.getElementById("print-btn");
+
+    function getStylesheetLink() {
+        const filePath = "style.css";
+        let host = window.location.hostname + (window.location.port.length ? `:${window.location.port}` : '');
+        let protocol = location.protocol;
+        return `${protocol}//${host}/${filePath}`;
+    }
 
     function printResume() {
         let mywindow = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
@@ -10,7 +17,7 @@
         // Link fonts
         mywindow.document.write('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">');
         // Link stylesheet
-        mywindow.document.write('<link rel="stylesheet" type="text/css" href="/style.css" />')
+        mywindow.document.write(`<link rel="stylesheet" type="text/css" href="${getStylesheetLink()}" />`)
 
         mywindow.document.write('</head><body >');
         mywindow.document.write(resumeContainer.innerHTML);
