@@ -14,7 +14,7 @@ body {
     padding: 5em;
     background: #222;
     font-family: 'Roboto', sans-serif;
-    font-size: 11pt;
+    font-size: 10.5pt;
 }
 
 #cv-container {
@@ -156,6 +156,10 @@ li {
     list-style-type: '- ';
 }
 
+li.target {
+    list-style-type: '> ';
+}
+
 @media print {
     * {
         -webkit-print-color-adjust: exact;
@@ -241,4 +245,11 @@ li {
 
 #action-row .btn:hover {
     background-color: #444;
+}
+
+.ctn.center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
