@@ -155,8 +155,12 @@ em {
     font-weight: bold;
 }
 
-li {
+.card li {
     list-style-type: '- ';
+}
+
+.card li::first-letter {
+    text-transform: uppercase;
 }
 
 li.target {
