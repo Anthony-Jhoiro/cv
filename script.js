@@ -5,9 +5,10 @@
 
     function getStylesheetLink() {
         const filePath = "style.css";
-        let host = window.location.hostname + (window.location.port.length ? `:${window.location.port}` : '');
-        let protocol = location.protocol;
-        return `${protocol}//${host}/${filePath}`;
+        const host = window.location.hostname + (window.location.port.length ? `:${window.location.port}` : '');
+        const pathName = window.location.pathname.replace("index.html", "");
+        const protocol = location.protocol;
+        return `${protocol}//${host}${pathName}${filePath}`;
     }
 
     function printResume() {
