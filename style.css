@@ -57,7 +57,7 @@ body {
 
 #admin-section-me>img {
     margin: 1em 0;
-    width: 3.5cm;
+    width: 3cm;
     aspect-ratio: 1;
 }
 
@@ -65,7 +65,7 @@ body {
     background-color: var(--primary-bg);
     color: #fff;
     padding: .2em 1em;
-    margin: .5em 0
+    margin: .3em 0
 }
 
 .tag-like::after {
@@ -153,6 +153,11 @@ ul.no-style-list {
 em {
     color: var(--primary-text);
     font-weight: bold;
+    text-transform: capitalize;
+}
+
+em.company-name {
+    text-decoration: underline;
 }
 
 .card li {
@@ -259,4 +264,21 @@ li.target {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+#hobbies {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-icon-container {
+    height: 1.5cm;
+    width: 1.5cm;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-icon-container>img {
+    max-width: 100%;
+    max-height: 100%;
 }
