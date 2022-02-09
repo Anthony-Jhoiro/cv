@@ -53,11 +53,12 @@ body {
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #admin-section-me>img {
     margin: 1em 0;
-    width: 3cm;
+    width: 4.2cm;
     aspect-ratio: 1;
 }
 
